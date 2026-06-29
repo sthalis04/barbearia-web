@@ -1,2 +1,4 @@
 Autor do projeto
 Thalis Bruno Siqueira da Silva
+
+https://github.com/sthalis04/barbearia-web
