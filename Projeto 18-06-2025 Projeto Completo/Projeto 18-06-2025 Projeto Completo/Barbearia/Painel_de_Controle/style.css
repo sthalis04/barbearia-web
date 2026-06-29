@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #d9d9e2;
+    
+}
+
+.logout-btn {
+    background: #4d4a4b;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+}
+
+.logout-btn:hover { /*botão sair*/
+    background: #afadad;
+    color: #000000;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.botoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(2, 180px);
+    gap: 40px 60px;
+}
+
+.card {
+    background: #323030; /*cor dos card*/
+    color: #ffffff;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+    width: 230px;
+    box-shadow: 0 6px 24px rgba(35,41,70,0.13);
+    position: relative;
+     display: flex;
+  gap: 0;
+    
+}
+
+.card:hover {
+    background: #5a5a5a;
+}
+
+.card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 2px 6px rgba(35,41,70,0.10));
+}
+
+.card button {
+    background: #3f3d49;
+    
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 28px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+}
+
+.card button:hover {
+    background: #afadad;
+}
+
+@media (max-width: 900px) {
+    .botoes-grid {
+        grid-template-columns: repeat(2, 180px);
+        grid-template-rows: repeat(3, 180px);
+        gap: 30px 30px;
+    }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.acao {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+

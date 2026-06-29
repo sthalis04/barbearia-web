@@ -1,0 +1,103 @@
+body {
+  background-color: #d9d9e2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5a5a5a;
+  color: white;
+}
+
+.links {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.links span {
+  color: #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5a5a5a;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}
+
+button:hover {
+  background-color: #777;
+}
+
+msg_error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+logout-btn {
+    background: #4d4a4b;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 28px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(35,41,70,0.08);
+}
+
+.logout-btn:hover { /*botão sair*/
+    background: #afadad;
+    color: #000000;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+}

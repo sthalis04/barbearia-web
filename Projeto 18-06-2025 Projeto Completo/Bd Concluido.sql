@@ -1,0 +1,3 @@
+ALTER TABLE usuario ADD bostaae VARCHAR (50) UNIQUE NOT NULL
+
+
